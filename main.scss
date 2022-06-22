@@ -239,31 +239,34 @@ header {
 
   >.large-inner {
     .STitle {
-      font-size: 60px;
+      font-size: 50px;
       font-weight: 900;
     }
 
     .experience__contents {
       .content__item {
-        padding: 100px 0;
         display: flex;
         justify-content: space-between;
 
         .item__text {
           width: 45%;
           padding-top: 40px;
+
           h4 {
             font-size: 40px;
             font-weight: 600;
           }
+
           p {
             font-size: 20px;
             font-weight: 500;
             color: #000;
           }
         }
+
         .item__img {
           width: 45%;
+
           img {
             width: 100%;
           }
@@ -598,33 +601,38 @@ footer {
           display: flex;
           flex-direction: column;
           align-items: center;
-          justify-content: flex-start;
-          
+
           .item__text {
             position: relative;
             width: 100%;
-            > h4 {
+
+            >h4 {
               position: absolute;
               top: 0;
               left: 0;
               right: 0;
             }
-            > p {
-              padding-top: 55vw;
+
+            >p {
+              padding-top: 60vw;
               max-width: 600px;
               margin: auto;
             }
+
             p.p_3 {
-              padding-top: 58vw;
+              padding-top: 62vw;
             }
+
             p.p_4 {
-              padding-top: 43vw;
+              padding-top: 50vw;
             }
           }
+
           .item__img {
             position: absolute;
             top: 145px;
             width: 80%;
+
             img {
               width: 100%;
             }
@@ -798,6 +806,7 @@ footer {
   .visual {
     height: 250px;
     margin-top: 70px;
+
     >.imgbg {
       width: 57vw;
       height: 35vh;
@@ -843,6 +852,69 @@ footer {
       }
     }
   }
+
+  //experience
+  .experience {
+    background-color: #eaeaee;
+    padding-top: 80px;
+
+    >.large-inner {
+      text-align: center;
+      .STitle {
+        font-size: 40px;
+        padding-bottom: 50px;
+      }
+
+      .experience__contents {
+        .content__item {
+          width: 85%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .item__text {
+            position: relative;
+            width: 100%;
+
+            >h4 {
+              font-size: 35px;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+            }
+
+            >p {
+              padding-top: 65vw;
+              max-width: 350px;
+              margin: auto;
+            }
+
+            p.p_3 {
+              padding-top: 68vw;
+            }
+
+            p.p_4 {
+              padding-top: 52vw;
+            }
+          }
+
+          .item__img {
+            position: absolute;
+            top: 145px;
+            width: 80%;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
 
   //footer
   footer {
