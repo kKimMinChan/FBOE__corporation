@@ -59,6 +59,7 @@ a {
 .back-to-position {
   opacity: 0;
   transition: 1s;
+  overflow: hidden;
 }
 
 .back-to-position.to-right {
@@ -87,31 +88,11 @@ a {
 }
 
 .show .back-to-position.delay-1 {
-  transition-delay: 0.4s;
+  transition-delay: 0.5s;
 }
 
 .show .back-to-position.delay-2 {
-  transition-delay: 0.8s;
-}
-
-.show .back-to-position.delay-3 {
-  transition-delay: 0s;
-}
-
-.show .back-to-position.delay-4 {
-  transition-delay: 0s;
-}
-
-.show .back-to-position.delay-5 {
-  transition-delay: 0s;
-}
-
-.show .back-to-position.delay-6 {
-  transition-delay: 0s;
-}
-
-.show .back-to-position.delay-7 {
-  transition-delay: 0s;
+  transition-delay: 1s;
 }
 
 header {
@@ -156,7 +137,7 @@ header > .inner .navbar .navbar__toogleBtn {
   position: relative;
   background: url("/FOBE__BG.8e0c464a.png") no-repeat;
   background-size: 100% 100%;
-  height: 500px;
+  height: 70vh;
   margin-top: 100px;
 }
 .visual .fade-in {
@@ -323,7 +304,8 @@ header > .inner .navbar .navbar__toogleBtn {
   font-weight: 600;
   font-size: 13px;
 }
-.contact > .inner .contact_text .address, .contact > .inner .contact_text .nameAndTel {
+.contact > .inner .contact_text .address,
+.contact > .inner .contact_text .nameAndTel {
   font-weight: 600;
   font-size: 13px;
 }
@@ -483,82 +465,47 @@ footer .inner > p {
     text-align: center;
   }
   .experience > .large-inner h3 {
-    color: #202147;
     font-size: 45px;
     font-weight: 900;
     padding-bottom: 80px;
     padding-left: 0;
   }
-  .experience > .large-inner .experience__contents .content__item:nth-child(2n+1) {
-    position: relative;
-    height: 500px;
-  }
-  .experience > .large-inner .experience__contents .content__item:nth-child(2n+1) .item__text p {
-    position: absolute;
-    bottom: 60px;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  .experience > .large-inner .experience__contents .content__item:nth-child(2n+1) .item__text h4 {
-    width: 80px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  .experience > .large-inner .experience__contents .content__item:nth-child(2n+1) .item__img img {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  .experience > .large-inner .experience__contents .content__item:nth-child(2n) {
-    position: relative;
-    height: 500px;
-  }
-  .experience > .large-inner .experience__contents .content__item:nth-child(2n) .item__text p {
-    position: absolute;
-    bottom: 60px;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  .experience > .large-inner .experience__contents .content__item:nth-child(2n) .item__text h4 {
-    width: 80px;
-    position: absolute;
-    padding: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  .experience > .large-inner .experience__contents .content__item:nth-child(2n) .item__img img {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
   .experience > .large-inner .experience__contents .content__item {
-    padding: 30px 0;
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
   .experience > .large-inner .experience__contents .content__item .item__text {
-    padding-top: 40px;
+    position: relative;
+    width: 100%;
   }
-  .experience > .large-inner .experience__contents .content__item .item__text h4 {
-    font-size: 40px;
-    font-weight: 900;
+  .experience > .large-inner .experience__contents .content__item .item__text > h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
   }
-  .experience > .large-inner .experience__contents .content__item .item__text p {
-    max-width: 350px;
-    font-size: 20px;
-    font-weight: 500;
+  .experience > .large-inner .experience__contents .content__item .item__text > p {
+    padding-top: 55vw;
+    max-width: 600px;
+    margin: auto;
+  }
+  .experience > .large-inner .experience__contents .content__item .item__text p.p_3 {
+    padding-top: 58vw;
+  }
+  .experience > .large-inner .experience__contents .content__item .item__text p.p_4 {
+    padding-top: 43vw;
+  }
+  .experience > .large-inner .experience__contents .content__item .item__img {
+    position: absolute;
+    top: 145px;
+    width: 80%;
   }
   .experience > .large-inner .experience__contents .content__item .item__img img {
-    max-width: 350px;
+    width: 100%;
   }
 
   .solution {
@@ -690,9 +637,14 @@ footer .inner > p {
 }
 @media screen and (max-width: 426px) {
   .visual {
-    height: 270px;
+    height: 250px;
     margin-top: 70px;
   }
+  .visual > .imgbg {
+    width: 57vw;
+    height: 35vh;
+  }
+
   .vision .large-inner .img-box {
     display: flex;
     flex-direction: column;
