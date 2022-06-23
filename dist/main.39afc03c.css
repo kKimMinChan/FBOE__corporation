@@ -40,8 +40,8 @@ a {
 }
 
 .btn:hover {
-  color: #fff;
-  background-color: #1f2147;
+  color: #1f2147;
+  background-color: #fff;
 }
 
 .btn.btn--white {
@@ -130,7 +130,7 @@ header > .inner .navbar .navbar__toogleBtn {
   position: absolute;
   right: 32px;
   font-size: 24px;
-  color: #d49466;
+  color: #222;
 }
 
 .visual {
@@ -208,6 +208,7 @@ header > .inner .navbar .navbar__toogleBtn {
 .experience > .large-inner .STitle {
   font-size: 50px;
   font-weight: 900;
+  padding-bottom: 80px;
 }
 .experience > .large-inner .experience__contents .content__item {
   display: flex;
@@ -234,10 +235,13 @@ header > .inner .navbar .navbar__toogleBtn {
 }
 
 .solution {
-  padding: 180px 0 130px;
+  padding: 180px 0 150px;
+  background: url("/right.8ee463b1.png") no-repeat bottom 30px right #202147;
+  background-size: 50% 30%;
 }
 .solution > .inner {
   text-align: center;
+  color: #fff;
 }
 .solution > .inner h3 {
   font-size: 36px;
@@ -250,6 +254,7 @@ header > .inner .navbar .navbar__toogleBtn {
 }
 .solution > .inner .solution-box {
   display: flex;
+  flex-direction: column;
 }
 .solution > .inner .solution-box > .img {
   padding: 30px;
@@ -260,16 +265,16 @@ header > .inner .navbar .navbar__toogleBtn {
   padding-top: 30px;
 }
 .solution > .inner .solution-box > .img .img__btn .btn {
-  color: #202147;
-  border: 1px solid #202147;
+  color: #fff;
+  border: 1px solid #fff;
   font-size: 18px;
   font-weight: 600;
   border-radius: 20px;
   transition: 0.3s;
 }
 .solution > .inner .solution-box > .img .img__btn .btn:hover {
-  color: #fff;
-  background-color: #1f2147;
+  color: #1f2147;
+  background-color: #fff;
 }
 .solution > .inner .solution-box > .img img {
   width: 90%;
@@ -488,7 +493,7 @@ footer .inner > p {
   }
   .experience > .large-inner .experience__contents .content__item .item__text > p {
     padding-top: 60vw;
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
   }
   .experience > .large-inner .experience__contents .content__item .item__text p.p_3 {
@@ -507,8 +512,8 @@ footer .inner > p {
   }
 
   .solution {
-    background-color: #4971f3;
     padding: 100px 0;
+    background-size: 50% 20%;
   }
   .solution > .inner {
     width: 100%;
@@ -539,11 +544,16 @@ footer .inner > p {
     padding-top: 50px;
   }
   .solution > .inner .solution-box > .img .img__btn .btn {
-    background-color: #fff;
-    color: #202147;
-    border: 1px solid #202147;
+    color: #fff;
+    border: 1px solid #fff;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  .solution > .inner .solution-box > .img .img__btn .btn:hover {
+    color: #1f2147;
+    background-color: #fff;
   }
   .solution > .inner .solution-box > .img img {
     width: 100%;
@@ -672,10 +682,6 @@ footer .inner > p {
     top: -30px;
   }
 
-  .experience {
-    background-color: #eaeaee;
-    padding-top: 80px;
-  }
   .experience > .large-inner {
     text-align: center;
   }

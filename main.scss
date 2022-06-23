@@ -41,8 +41,8 @@ a {
 }
 
 .btn:hover {
-  color: #fff;
-  background-color: #1f2147;
+  color: #1f2147;
+  background-color: #fff;
 }
 
 .btn.btn--white {
@@ -139,7 +139,7 @@ header {
         position: absolute;
         right: 32px;
         font-size: 24px;
-        color: #d49466;
+        color: #222;
       }
     }
   }
@@ -241,32 +241,28 @@ header {
     .STitle {
       font-size: 50px;
       font-weight: 900;
+      padding-bottom: 80px;
     }
 
     .experience__contents {
       .content__item {
         display: flex;
         justify-content: space-between;
-
         .item__text {
           width: 45%;
           padding-top: 40px;
-
           h4 {
             font-size: 40px;
             font-weight: 600;
           }
-
           p {
             font-size: 20px;
             font-weight: 500;
             color: #000;
           }
         }
-
         .item__img {
           width: 45%;
-
           img {
             width: 100%;
           }
@@ -278,11 +274,13 @@ header {
 
 // Solution
 .solution {
-  padding: 180px 0 130px;
+  padding: 180px 0 150px;
+  background: url("./images/right.png") no-repeat bottom 30px right #202147;
+  background-size: 50% 30%;
 
   >.inner {
     text-align: center;
-
+    color: #fff;
     h3 {
       font-size: 36px;
       font-weight: 900;
@@ -296,6 +294,7 @@ header {
 
     .solution-box {
       display: flex;
+      flex-direction: column;
 
       >.img {
         padding: 30px;
@@ -306,8 +305,8 @@ header {
           padding-top: 30px;
 
           .btn {
-            color: #202147;
-            border: 1px solid #202147;
+            color: #fff;
+            border: 1px solid #fff;
             font-size: 18px;
             font-weight: 600;
             border-radius: 20px;
@@ -315,8 +314,8 @@ header {
           }
 
           .btn:hover {
-            color: #fff;
-            background-color: #1f2147;
+            color: #1f2147;
+            background-color: #fff;
           }
         }
 
@@ -615,7 +614,7 @@ footer {
 
             >p {
               padding-top: 60vw;
-              max-width: 600px;
+              max-width: 500px;
               margin: auto;
             }
 
@@ -644,9 +643,8 @@ footer {
 
   // Solution
   .solution {
-    background-color: #4971f3;
     padding: 100px 0;
-
+    background-size: 50% 20%;
     >.inner {
       width: 100%;
       text-align: center;
@@ -678,11 +676,17 @@ footer {
             padding-top: 50px;
 
             .btn {
-              background-color: #fff;
-              color: #202147;
-              border: 1px solid #202147;
+              color: #fff;
+              border: 1px solid #fff;
               font-size: 18px;
-              font-weight: 900;
+              font-weight: 600;
+              border-radius: 20px;
+              transition: .3s;
+            }
+  
+            .btn:hover {
+              color: #1f2147;
+              background-color: #fff;
             }
           }
 
@@ -855,16 +859,12 @@ footer {
 
   //experience
   .experience {
-    background-color: #eaeaee;
-    padding-top: 80px;
-
     >.large-inner {
       text-align: center;
       .STitle {
         font-size: 40px;
         padding-bottom: 50px;
       }
-
       .experience__contents {
         .content__item {
           width: 85%;
@@ -913,8 +913,6 @@ footer {
       }
     }
   }
-
-  
 
   //footer
   footer {
