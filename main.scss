@@ -421,7 +421,6 @@ header {
         display: inline-flex;
         padding-bottom: 40px;
       }
-
       .bt {
         button {
           border: 1px solid #222;
@@ -431,7 +430,7 @@ header {
           transition: .3s;
           font-weight: 600;
         }
-      }
+      }      
     }
   }
 }
@@ -747,6 +746,17 @@ footer {
 
         #Message {
           text-align: start;
+        }
+        .bt {
+          padding-left: 75px;
+          button {
+            border: 1px solid #222;
+            border-radius: 30px;
+            padding: 12px 25px;
+            cursor: pointer;
+            transition: .3s;
+            font-weight: 600;
+          }
         }
       }
     }

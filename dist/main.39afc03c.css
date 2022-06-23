@@ -601,6 +601,17 @@ footer .inner > p {
   .contact > .inner .sign #Message {
     text-align: start;
   }
+  .contact > .inner .sign .bt {
+    padding-left: 75px;
+  }
+  .contact > .inner .sign .bt button {
+    border: 1px solid #222;
+    border-radius: 30px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+  }
 
   .awards {
     padding: 30px 0;
