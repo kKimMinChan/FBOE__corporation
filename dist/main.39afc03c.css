@@ -213,6 +213,7 @@ header > .inner .navbar .navbar__toogleBtn {
 .experience > .large-inner .experience__contents .content__item {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 150px;
 }
 .experience > .large-inner .experience__contents .content__item .item__text {
   width: 45%;
