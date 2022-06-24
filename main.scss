@@ -760,7 +760,9 @@ footer {
       .contact_text {
         width: 300px;
         margin: auto;
-
+        > h2 {
+          padding-bottom: 30px;
+        }
         .text {
           display: none;
         }
@@ -792,7 +794,13 @@ footer {
           text-align: start;
         }
 
+        .Title {
+          display: inline-flex;
+          padding-bottom: 10px;
+        }
+
         #Message {
+          width: 290px;
           text-align: start;
         }
 
@@ -920,16 +928,6 @@ footer {
         display: flex;
         flex-direction: column;
         .imgAndDes {
-
-          span {
-            display: flex;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: 900;
-            color: rgb(7, 7, 165);
-            padding: 20px;
-          }
-
           img {
             width: 55%;
           }
@@ -996,6 +994,8 @@ footer {
       }
     }
   }
+
+  
 
   //footer
   footer {

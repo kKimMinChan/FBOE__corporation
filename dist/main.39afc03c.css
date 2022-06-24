@@ -614,6 +614,9 @@ footer .inner > p {
     width: 300px;
     margin: auto;
   }
+  .contact > .inner .contact_text > h2 {
+    padding-bottom: 30px;
+  }
   .contact > .inner .contact_text .text {
     display: none;
   }
@@ -638,7 +641,12 @@ footer .inner > p {
   .contact > .inner .sign .last {
     text-align: start;
   }
+  .contact > .inner .sign .Title {
+    display: inline-flex;
+    padding-bottom: 10px;
+  }
   .contact > .inner .sign #Message {
+    width: 290px;
     text-align: start;
   }
   .contact > .inner .sign .bt {
@@ -708,14 +716,6 @@ footer .inner > p {
   .vision .large-inner .img-box {
     display: flex;
     flex-direction: column;
-  }
-  .vision .large-inner .img-box .imgAndDes span {
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 900;
-    color: rgb(7, 7, 165);
-    padding: 20px;
   }
   .vision .large-inner .img-box .imgAndDes img {
     width: 55%;
