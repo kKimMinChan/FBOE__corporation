@@ -95,6 +95,30 @@ a {
   transition-delay: 1s;
 }
 
+.show .back-to-position.delay-3 {
+  transition-delay: 1.3s;
+}
+
+.show .back-to-position.delay-4 {
+  transition-delay: 1.6s;
+}
+
+.show .back-to-position.delay-5 {
+  transition-delay: 1.8s;
+}
+
+.show .back-to-position.delay-6 {
+  transition-delay: 2s;
+}
+
+.show .back-to-position.delay-7 {
+  transition-delay: 2.2s;
+}
+
+.show .back-to-position.delay-8 {
+  transition-delay: 1s;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -176,7 +200,7 @@ header > .inner .navbar .navbar__toogleBtn {
 }
 .vision > .inner .vision-description p {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   color: rgb(3, 1, 143);
   padding: 0 20px;
 }
@@ -249,16 +273,21 @@ header > .inner .navbar .navbar__toogleBtn {
   font-weight: 900;
   padding: 0 30px 30px 30px;
 }
-.solution > .inner p {
-  font-size: 22px;
-  font-weight: 500;
+.solution > .inner .inner__box {
+  display: flex;
+  justify-content: center;
+}
+.solution > .inner .inner__box p {
+  max-width: 700px;
+  font-size: 16px;
+  font-weight: 400;
 }
 .solution > .inner .solution-box {
   display: flex;
   flex-direction: column;
 }
 .solution > .inner .solution-box > .img {
-  padding: 30px;
+  padding: 70px 30px 30px 30px;
 }
 .solution > .inner .solution-box > .img .img__btn {
   display: flex;
@@ -277,9 +306,13 @@ header > .inner .navbar .navbar__toogleBtn {
   color: #1f2147;
   background-color: #fff;
 }
+.solution > .inner .solution-box > .img .Solution-title {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
 .solution > .inner .solution-box > .img img {
-  width: 90%;
-  margin-top: 50px;
+  width: 100%;
 }
 
 .contact {
@@ -288,6 +321,7 @@ header > .inner .navbar .navbar__toogleBtn {
   background-size: 100% 100%;
 }
 .contact > .inner {
+  position: relative;
   display: flex;
   justify-content: space-around;
   padding: 0 20px;
@@ -368,6 +402,12 @@ header > .inner .navbar .navbar__toogleBtn {
   cursor: pointer;
   transition: 0.3s;
   font-weight: 600;
+}
+.contact > .inner .All_rights {
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+  font-size: 13px;
 }
 
 .awards {
@@ -669,29 +709,16 @@ footer .inner > p {
     display: flex;
     flex-direction: column;
   }
-  .vision .large-inner .img-box .img {
-    position: relative;
+  .vision .large-inner .img-box .imgAndDes span {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(7, 7, 165);
+    padding: 20px;
   }
-  .vision .large-inner .img-box .img > p {
-    display: block;
-    padding: 10px 20px;
-  }
-  .vision .large-inner .img-box .img img {
-    width: 60%;
-    padding-top: 100px;
-  }
-  .vision .large-inner .img-box .img span {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-  .vision .large-inner .img-box .img:nth-of-type(1) > img {
-    padding-top: 30px;
-  }
-  .vision .large-inner .img-box .img:nth-of-type(1) > span {
-    top: -30px;
+  .vision .large-inner .img-box .imgAndDes img {
+    width: 55%;
   }
 
   .experience > .large-inner {
