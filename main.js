@@ -85,3 +85,10 @@ if (matchMedia("screen and (max-width: 426px)").matches) {
   wordEl.classList.remove('fade-in');
 }
 console.log(matchMedia("screen and (max-width: 426px)").matches);
+
+/**
+ * 올해가 몇 년도인지 계산
+ */
+ const thisYear = document.querySelector('.this-year')
+ thisYear.textContent = new Date().getFullYear()
+ 
