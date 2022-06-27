@@ -123,24 +123,19 @@ var menuEl = document.querySelector('.navbar__menu');
 var navbarEl = document.querySelector('.navbar');
 toggleBtnEl.addEventListener('click', function () {
   menuEl.classList.toggle('active');
-});
-new Swiper('.awards .swiper-container', {
-  // direction: 'horizontal', // 수평 슬라이드
-  autoplay: true,
-  // 자동 재생 여부
-  loop: true,
-  // 반복 재생 여부
-  spaceBetween: 10,
-  // 슬라이드 사이 여백
-  slidesPerView: 5,
-  // 한 번에 보여줄 슬라이드 개수
-  slidesPerGroup: 1 // 한 번에 슬라이드 할 개수(전체 개수로 나뉘어야 함)
-  // navigation: { // 슬라이드 이전/다음 버튼 사용 여부
-  //   prevEl: '.awards .swiper-prev', // 이전 버튼 선택자
-  //   nextEl: '.awards .swiper-next' // 다음 버튼 선택자
-  // }
+}); // new Swiper('.awards .swiper-container', {
+//   // direction: 'horizontal', // 수평 슬라이드
+//   autoplay: true, // 자동 재생 여부
+//   loop: true, // 반복 재생 여부
+//   spaceBetween: 10, // 슬라이드 사이 여백
+//   slidesPerView: 5, // 한 번에 보여줄 슬라이드 개수
+//   slidesPerGroup: 1, // 한 번에 슬라이드 할 개수(전체 개수로 나뉘어야 함)
+//   // navigation: { // 슬라이드 이전/다음 버튼 사용 여부
+//   //   prevEl: '.awards .swiper-prev', // 이전 버튼 선택자
+//   //   nextEl: '.awards .swiper-next' // 다음 버튼 선택자
+//   // }
+// })
 
-});
 /**
  * 순서대로 나타나는 기능
  */
@@ -241,7 +236,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64125" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49776" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
