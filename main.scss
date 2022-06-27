@@ -84,6 +84,17 @@ a {
   transform: translateX(0);
 }
 
+.show .back-to-position.spd.delay-1 {
+  transition-delay: .2s;
+}
+
+.show .back-to-position.spd.delay-2 {
+  transition-delay: .4s;
+}
+.show .back-to-position.spd.delay-3 {
+  transition-delay: .6s;
+}
+
 .show .back-to-position.delay-0 {
   transition-delay: 0s;
 }
@@ -886,40 +897,6 @@ footer {
     }
   }
 
-  // // Vision
-  // .vision {
-  //   .large-inner {
-  //     .img-box {
-  //       display: flex;
-  //       flex-direction: column;
-  //       .img {
-  //         position: relative;
-  //         >p {
-  //           display: block;
-  //           padding: 10px 20px;
-  //         }
-  //         img {
-  //           width: 60%;
-  //           padding-top: 100px;
-  //         }
-  //         span {
-  //           position: absolute;
-  //           top: 40px;
-  //           left: 0;
-  //           right: 0;
-  //           margin: auto;
-  //         }
-  //       }
-  //       .img:nth-of-type(1)>img {
-  //         padding-top: 30px;
-  //       }
-  //       .img:nth-of-type(1)>span {
-  //         top: -30px;
-  //       }
-  //     }
-  //   }
-  // }
-
   // Vision
   .vision {
     > .inner {
@@ -929,33 +906,33 @@ footer {
         }
         > h3 {
           margin: 0;
+          padding-bottom: 30px;
         }
       }
     }
     
-
-
     .large-inner {
       .img-box {
         display: flex;
         flex-direction: column;
-
         .imgAndDes {
-          padding: 30px 10px;
+          padding: 0px 10px 30px;
           display: flex;
-          position: relative;
-          .scroll-spy-box {
+          .vision__des {
             display: flex;
-            position: relative;
+            .img-box1 {
+              position: relative;
+              padding-bottom: 30px;
+            }
             > p {
               display: block;
               padding: 10px;
             }
-            > span {
+            span {
+              position: absolute;
               padding: 0;
               font-size: 15px;
-              position: absolute;
-              bottom: -25px;
+              bottom: 0;
             }
             .t {
               left: calc((100px - 44.76px) / 2);
