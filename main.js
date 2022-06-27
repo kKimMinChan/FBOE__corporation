@@ -73,3 +73,15 @@ spyElsss.forEach(function (spyEl) {
     .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
     .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
 })
+
+
+//모바일 하면에서 img p 태크 fade-in 제거
+let media = window.matchMedia("screen and (max-width: 426px)")
+
+let imgbgEl = document.querySelector(".imgbg");
+let wordEl = document.querySelector(".word");
+if (matchMedia("screen and (max-width: 426px)").matches) {
+  imgbgEl.classList.remove('fade-in');
+  wordEl.classList.remove('fade-in');
+}
+console.log(matchMedia("screen and (max-width: 426px)").matches);

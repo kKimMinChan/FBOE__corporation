@@ -195,7 +195,18 @@ spyElsss.forEach(function (spyEl) {
 
   }).setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
-});
+}); //모바일 하면에서 img p 태크 fade-in 제거
+
+var media = window.matchMedia("screen and (max-width: 426px)");
+var imgbgEl = document.querySelector(".imgbg");
+var wordEl = document.querySelector(".word");
+
+if (matchMedia("screen and (max-width: 426px)").matches) {
+  imgbgEl.classList.remove('fade-in');
+  wordEl.classList.remove('fade-in');
+}
+
+console.log(matchMedia("screen and (max-width: 426px)").matches);
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -224,7 +235,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62817" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62979" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
