@@ -232,7 +232,7 @@ header {
       display: flex;
 
       .imgAndDes {
-        >p {
+        p {
           display: none;
         }
 
@@ -922,15 +922,56 @@ footer {
 
   // Vision
   .vision {
+    > .inner {
+      .vision-description {
+        > p {
+          display: none;
+        }
+        > h3 {
+          margin: 0;
+        }
+      }
+    }
+    
+
 
     .large-inner {
       .img-box {
         display: flex;
         flex-direction: column;
+
         .imgAndDes {
-          img {
-            width: 55%;
+          padding: 30px 10px;
+          display: flex;
+          position: relative;
+          .scroll-spy-box {
+            display: flex;
+            position: relative;
+            > p {
+              display: block;
+              padding: 10px;
+            }
+            > span {
+              padding: 0;
+              font-size: 15px;
+              position: absolute;
+              bottom: -25px;
+            }
+            .t {
+              left: calc((100px - 44.76px) / 2);
+            }
+            .c {
+              left: calc((100px - 68.55px) / 2);
+            }
+            .f {
+              left: calc((100px - 55.5px) / 2);
+            }
           }
+          .sec {
+            width: 100px;
+            height: 100px;
+          }
+          
         }
       }
     }

@@ -210,7 +210,7 @@ header > .inner .navbar .navbar__toogleBtn {
 .vision .large-inner .img-box {
   display: flex;
 }
-.vision .large-inner .img-box .imgAndDes > p {
+.vision .large-inner .img-box .imgAndDes p {
   display: none;
 }
 .vision .large-inner .img-box .imgAndDes span {
@@ -713,12 +713,47 @@ footer .inner > p {
     height: 220px;
   }
 
+  .vision > .inner .vision-description > p {
+    display: none;
+  }
+  .vision > .inner .vision-description > h3 {
+    margin: 0;
+  }
   .vision .large-inner .img-box {
     display: flex;
     flex-direction: column;
   }
-  .vision .large-inner .img-box .imgAndDes img {
-    width: 55%;
+  .vision .large-inner .img-box .imgAndDes {
+    padding: 30px 10px;
+    display: flex;
+    position: relative;
+  }
+  .vision .large-inner .img-box .imgAndDes .scroll-spy-box {
+    display: flex;
+    position: relative;
+  }
+  .vision .large-inner .img-box .imgAndDes .scroll-spy-box > p {
+    display: block;
+    padding: 10px;
+  }
+  .vision .large-inner .img-box .imgAndDes .scroll-spy-box > span {
+    padding: 0;
+    font-size: 15px;
+    position: absolute;
+    bottom: -25px;
+  }
+  .vision .large-inner .img-box .imgAndDes .scroll-spy-box .t {
+    left: 27.62px;
+  }
+  .vision .large-inner .img-box .imgAndDes .scroll-spy-box .c {
+    left: 15.725px;
+  }
+  .vision .large-inner .img-box .imgAndDes .scroll-spy-box .f {
+    left: 22.25px;
+  }
+  .vision .large-inner .img-box .imgAndDes .sec {
+    width: 100px;
+    height: 100px;
   }
 
   .experience > .large-inner {
