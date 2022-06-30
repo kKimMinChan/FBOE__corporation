@@ -118,11 +118,27 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-var toggleBtnEl = document.querySelector(".navbar__toogleBtn");
-var menuEl = document.querySelector('.navbar__menu');
-var navbarEl = document.querySelector('.navbar');
-toggleBtnEl.addEventListener('click', function () {
-  menuEl.classList.toggle('active');
+// const toggleBtnEl = document.querySelector(".navbar__toogleBtn");
+// const menuEl = document.querySelector('.navbar__menu');
+// const navbarEl = document.querySelector('.navbar');
+// toggleBtnEl.addEventListener('click', () => {
+//   menuEl.classList.toggle('active')
+// })
+var toggleBtn = document.querySelector('.nav__button');
+var menu = document.querySelector('.nav');
+var menu1 = document.querySelector('.main__nav');
+toggleBtn.addEventListener('click', function () {
+  menu.classList.toggle('active');
+  menu1.classList.toggle('active');
+});
+var sol = document.querySelector('.solution');
+var twosol = document.querySelector('.solutions-nav');
+var twosol2 = document.querySelector('#underline');
+var twosol3 = document.querySelector('.nav');
+sol.addEventListener('click', function () {
+  twosol.classList.toggle('active');
+  twosol2.classList.toggle('active');
+  twosol3.classList.toggle('active2');
 }); // new Swiper('.awards .swiper-container', {
 //   // direction: 'horizontal', // 수평 슬라이드
 //   autoplay: true, // 자동 재생 여부
@@ -236,7 +252,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49776" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56651" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

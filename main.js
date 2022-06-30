@@ -1,11 +1,28 @@
-const toggleBtnEl = document.querySelector(".navbar__toogleBtn");
-const menuEl = document.querySelector('.navbar__menu');
-const navbarEl = document.querySelector('.navbar');
+// const toggleBtnEl = document.querySelector(".navbar__toogleBtn");
+// const menuEl = document.querySelector('.navbar__menu');
+// const navbarEl = document.querySelector('.navbar');
 
-toggleBtnEl.addEventListener('click', () => {
-  menuEl.classList.toggle('active')
-})
+// toggleBtnEl.addEventListener('click', () => {
+//   menuEl.classList.toggle('active')
+// })
 
+const toggleBtn=document.querySelector('.nav__button');
+const menu= document.querySelector('.nav');
+const menu1= document.querySelector('.main__nav');
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  menu1.classList.toggle('active');
+});
+
+const sol=document.querySelector('.solution');
+const twosol= document.querySelector('.solutions-nav');
+const twosol2=document.querySelector('#underline');
+const twosol3=document.querySelector('.nav');
+sol.addEventListener('click', () =>{
+  twosol.classList.toggle('active');
+  twosol2.classList.toggle('active');
+  twosol3.classList.toggle('active2');
+});
 
 // new Swiper('.awards .swiper-container', {
 //   // direction: 'horizontal', // 수평 슬라이드
