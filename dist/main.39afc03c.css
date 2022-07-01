@@ -727,6 +727,21 @@ header .inner .main__nav .nav .nav__name .solutions-nav li:first-child {
     height: 400px;
     margin-top: 50px;
   }
+  .visual .word, .visual .word2 {
+    font-size: 4vw;
+    color: #fff;
+    position: absolute;
+    font-family: "Secular One", sans-serif;
+  }
+  .visual .word {
+    bottom: 38%;
+    right: 8%;
+  }
+  .visual .word2 {
+    font-size: 3.7vw;
+    bottom: 25%;
+    right: 18%;
+  }
 
   .vision {
     padding-top: 80px;

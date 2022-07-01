@@ -792,7 +792,6 @@ color: rgba(33, 33, 33, 0.7);
     display:none;
     font-size:10px;
     opacity: 1;
-    
   }
   header .inner .main__nav .nav .nav__name .solutions-nav li{
     border:none;
@@ -915,6 +914,21 @@ color: rgba(33, 33, 33, 0.7);
   .visual {
     height: 400px;
     margin-top: 50px;
+    .word, .word2 {
+      font-size: 4vw;
+      color: #fff;
+      position: absolute;
+      font-family: 'Secular One', sans-serif;
+    }
+    .word {
+      bottom: 38%;
+      right: 8%;
+    }
+    .word2 {
+      font-size: 3.7vw;
+      bottom: 25%;
+      right: 18%;
+    }
   }
 
   // Vision
