@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
 textarea {
   resize: none;
 }
@@ -100,11 +101,11 @@ a {
 }
 
 .show .back-to-position.delay-1 {
-  transition-delay: 0.5s;
+  transition-delay: 0.4s;
 }
 
 .show .back-to-position.delay-2 {
-  transition-delay: 1s;
+  transition-delay: 0.8s;
 }
 
 .show .back-to-position.delay-3 {
@@ -133,6 +134,7 @@ a {
 
 /* HEADER */
 header {
+  font-family: "Secular One", sans-serif;
   position: relative;
   width: 100%;
   top: 0;
@@ -149,11 +151,12 @@ header .inner {
   margin: 0 auto;
 }
 header .inner .logo {
+  height: 42px;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 10px;
-  margin: 25px 0;
+  margin: auto;
 }
 header .inner .logo img {
   width: 117.5px;
@@ -316,19 +319,28 @@ header .inner .main__nav .nav .nav__name .solutions-nav li:first-child {
   height: 55vh;
   margin: auto 0;
 }
-.visual .word {
+.visual .word, .visual .word2 {
   font-size: 4vw;
-  font-weight: 900;
   color: #fff;
   position: absolute;
+  font-family: "Secular One", sans-serif;
+}
+.visual .word {
   bottom: 38%;
   right: 8%;
+}
+.visual .word2 {
+  font-size: 3.7vw;
+  bottom: 20%;
+  right: 18%;
 }
 
 .vision {
   padding: 120px 0 180px;
   background-color: #fff;
   text-align: center;
+  font-family: "Secular One", sans-serif;
+  font-weight: 100;
 }
 .vision > .inner {
   display: flex;
@@ -339,12 +351,10 @@ header .inner .main__nav .nav .nav__name .solutions-nav li:first-child {
 }
 .vision > .inner .vision-description h3 {
   font-size: 40px;
-  font-weight: 900;
   margin-bottom: 50px;
 }
 .vision > .inner .vision-description p {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 21px;
   color: rgb(3, 1, 143);
   padding: 0 20px;
 }
@@ -361,7 +371,6 @@ header .inner .main__nav .nav .nav__name .solutions-nav li:first-child {
   display: flex;
   justify-content: center;
   font-size: 24px;
-  font-weight: 900;
   color: rgb(7, 7, 165);
   padding: 20px;
 }
@@ -423,7 +432,7 @@ header .inner .main__nav .nav .nav__name .solutions-nav li:first-child {
 }
 .Solution > .inner .inner__box p {
   max-width: 700px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
 }
 .Solution > .inner .solution-box {
