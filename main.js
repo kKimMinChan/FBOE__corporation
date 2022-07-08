@@ -6,36 +6,20 @@
 //   menuEl.classList.toggle('active')
 // })
 
+
 const toggleBtn=document.querySelector('.nav__button');
 const menu= document.querySelector('.nav');
-const menu1= document.querySelector('.main__nav');
 toggleBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
-  menu1.classList.toggle('active');
 });
 
 const sol=document.querySelector('.solution');
-const twosol= document.querySelector('.solutions-nav');
-const twosol2=document.querySelector('#underline');
-const twosol3=document.querySelector('.nav');
+const twosol= document.querySelector('.solutions');
+const twosol2= document.querySelector('.nav');
 sol.addEventListener('click', () =>{
   twosol.classList.toggle('active');
-  twosol2.classList.toggle('active');
-  twosol3.classList.toggle('active2');
+  twosol2.classList.toggle('active2');
 });
-
-// new Swiper('.awards .swiper-container', {
-//   // direction: 'horizontal', // 수평 슬라이드
-//   autoplay: true, // 자동 재생 여부
-//   loop: true, // 반복 재생 여부
-//   spaceBetween: 10, // 슬라이드 사이 여백
-//   slidesPerView: 5, // 한 번에 보여줄 슬라이드 개수
-//   slidesPerGroup: 1, // 한 번에 슬라이드 할 개수(전체 개수로 나뉘어야 함)
-//   // navigation: { // 슬라이드 이전/다음 버튼 사용 여부
-//   //   prevEl: '.awards .swiper-prev', // 이전 버튼 선택자
-//   //   nextEl: '.awards .swiper-next' // 다음 버튼 선택자
-//   // }
-// })
 
 /**
  * 순서대로 나타나는 기능
@@ -91,15 +75,22 @@ spyElsss.forEach(function (spyEl) {
     .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
 })
 
+//Submit 알람
+let btn = document.querySelector(".btn.btn--white");
+btn.onclick = function () {
+  alert("Thank you");
+}
 
 //모바일 하면에서 img p 태크 fade-in 제거
 let media = window.matchMedia("screen and (max-width: 426px)")
 
 let imgbgEl = document.querySelector(".imgbg");
 let wordEl = document.querySelector(".word");
+let word2El = document.querySelector(".word2");
 if (matchMedia("screen and (max-width: 426px)").matches) {
   imgbgEl.classList.remove('fade-in');
   wordEl.classList.remove('fade-in');
+  word2El.classList.remove('fade-in');
 }
 console.log(matchMedia("screen and (max-width: 426px)").matches);
 

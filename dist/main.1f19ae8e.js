@@ -126,32 +126,16 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 // })
 var toggleBtn = document.querySelector('.nav__button');
 var menu = document.querySelector('.nav');
-var menu1 = document.querySelector('.main__nav');
 toggleBtn.addEventListener('click', function () {
   menu.classList.toggle('active');
-  menu1.classList.toggle('active');
 });
 var sol = document.querySelector('.solution');
-var twosol = document.querySelector('.solutions-nav');
-var twosol2 = document.querySelector('#underline');
-var twosol3 = document.querySelector('.nav');
+var twosol = document.querySelector('.solutions');
+var twosol2 = document.querySelector('.nav');
 sol.addEventListener('click', function () {
   twosol.classList.toggle('active');
-  twosol2.classList.toggle('active');
-  twosol3.classList.toggle('active2');
-}); // new Swiper('.awards .swiper-container', {
-//   // direction: 'horizontal', // 수평 슬라이드
-//   autoplay: true, // 자동 재생 여부
-//   loop: true, // 반복 재생 여부
-//   spaceBetween: 10, // 슬라이드 사이 여백
-//   slidesPerView: 5, // 한 번에 보여줄 슬라이드 개수
-//   slidesPerGroup: 1, // 한 번에 슬라이드 할 개수(전체 개수로 나뉘어야 함)
-//   // navigation: { // 슬라이드 이전/다음 버튼 사용 여부
-//   //   prevEl: '.awards .swiper-prev', // 이전 버튼 선택자
-//   //   nextEl: '.awards .swiper-next' // 다음 버튼 선택자
-//   // }
-// })
-
+  twosol2.classList.toggle('active2');
+});
 /**
  * 순서대로 나타나는 기능
  */
@@ -206,15 +190,24 @@ spyElsss.forEach(function (spyEl) {
 
   }).setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
-}); //모바일 하면에서 img p 태크 fade-in 제거
+}); //Submit 알람
+
+var btn = document.querySelector(".btn.btn--white");
+
+btn.onclick = function () {
+  alert("Thank you");
+}; //모바일 하면에서 img p 태크 fade-in 제거
+
 
 var media = window.matchMedia("screen and (max-width: 426px)");
 var imgbgEl = document.querySelector(".imgbg");
 var wordEl = document.querySelector(".word");
+var word2El = document.querySelector(".word2");
 
 if (matchMedia("screen and (max-width: 426px)").matches) {
   imgbgEl.classList.remove('fade-in');
   wordEl.classList.remove('fade-in');
+  word2El.classList.remove('fade-in');
 }
 
 console.log(matchMedia("screen and (max-width: 426px)").matches);
@@ -252,7 +245,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58768" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62743" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
