@@ -465,9 +465,10 @@ header .nav li .underline {
   background-color: #fff;
 }
 .Solution > .inner .solution-box > .img .Solution-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   padding-bottom: 10px;
+  color: blueviolet;
 }
 .Solution > .inner .solution-box > .img img {
   width: 100%;
@@ -579,6 +580,34 @@ header .nav li .underline {
   bottom: -70px;
   right: 0;
   font-size: 13px;
+}
+
+.alert-box {
+  position: fixed;
+  width: 20%;
+  height: 200px;
+  top: 200px;
+  left: 40%;
+  background-color: skyblue;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+  display: none;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
 }
 
 @media screen and (max-width: 1340px) {
@@ -1128,7 +1157,7 @@ header .nav li .underline {
   }
 
   .experience .show .back-to-position.spd.delay-1 {
-    transition-delay: 0.5s;
+    transition-delay: 1s;
   }
   .experience > .large-inner {
     text-align: center;
@@ -1167,7 +1196,7 @@ header .nav li .underline {
     right: 0;
   }
   .experience > .large-inner .experience__contents .content__item .item__text > p {
-    max-width: 350px;
+    max-width: 320px;
     font-size: 14px;
     position: absolute;
     right: 0;

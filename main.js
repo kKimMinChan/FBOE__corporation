@@ -77,9 +77,15 @@ spyElsss.forEach(function (spyEl) {
 
 //Submit 알람
 let btn = document.querySelector(".btn.btn--white");
-btn.onclick = function () {
-  alert("Thank you");
+// btn.onclick = function () {
+//   alert("Thank you");
+// }
+let alertBox = document.querySelector(".alert-box");
+let copy = document.querySelector(".copyright");
+copy.onclick = function () {
+  alertBox.style.display = "block";
 }
+
 
 //모바일 하면에서 img p 태크 fade-in 제거
 let media = window.matchMedia("screen and (max-width: 426px)")
@@ -100,3 +106,21 @@ console.log(matchMedia("screen and (max-width: 426px)").matches);
  const thisYear = document.querySelector('.this-year')
  thisYear.textContent = new Date().getFullYear()
  
+
+//  $().ready(function () {
+//   $("#alertStart").click(function () {
+//       Swal.fire({
+//           icon: 'success',                         // Alert 타입
+//           //title: 'Thank for your submit',         // Alert 제목
+//           text: 'Thank for your submit',  // Alert 내용
+//       });
+//   });
+// });
+
+const alertStart = document.querySelector("#alertStart");
+alertStart.onclick = function () {
+  Swal.fire({
+    text: 'Thank for your submit',
+    icon: 'success',
+  })
+}

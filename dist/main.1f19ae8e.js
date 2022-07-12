@@ -192,10 +192,15 @@ spyElsss.forEach(function (spyEl) {
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 }); //Submit 알람
 
-var btn = document.querySelector(".btn.btn--white");
+var btn = document.querySelector(".btn.btn--white"); // btn.onclick = function () {
+//   alert("Thank you");
+// }
 
-btn.onclick = function () {
-  alert("Thank you");
+var alertBox = document.querySelector(".alert-box");
+var copy = document.querySelector(".copyright");
+
+copy.onclick = function () {
+  alertBox.style.display = "block";
 }; //모바일 하면에서 img p 태크 fade-in 제거
 
 
@@ -216,7 +221,24 @@ console.log(matchMedia("screen and (max-width: 426px)").matches);
  */
 
 var thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();
+thisYear.textContent = new Date().getFullYear(); //  $().ready(function () {
+//   $("#alertStart").click(function () {
+//       Swal.fire({
+//           icon: 'success',                         // Alert 타입
+//           //title: 'Thank for your submit',         // Alert 제목
+//           text: 'Thank for your submit',  // Alert 내용
+//       });
+//   });
+// });
+
+var alertStart = document.querySelector("#alertStart");
+
+alertStart.onclick = function () {
+  Swal.fire({
+    text: 'Thank for your submit',
+    icon: 'success'
+  });
+};
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -245,7 +267,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62743" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63098" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
