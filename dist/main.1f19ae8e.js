@@ -118,35 +118,29 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-// const toggleBtnEl = document.querySelector(".navbar__toogleBtn");
-// const menuEl = document.querySelector('.navbar__menu');
-// const navbarEl = document.querySelector('.navbar');
-// toggleBtnEl.addEventListener('click', () => {
-//   menuEl.classList.toggle('active')
-// })
-var toggleBtn = document.querySelector('.nav__button');
-var menu = document.querySelector('.nav');
-toggleBtn.addEventListener('click', function () {
-  menu.classList.toggle('active');
+var toggleBtn = document.querySelector(".nav__button");
+var menu = document.querySelector(".nav");
+toggleBtn.addEventListener("click", function () {
+  menu.classList.toggle("active");
 });
-var sol = document.querySelector('.solution');
-var twosol = document.querySelector('.solutions');
-var twosol2 = document.querySelector('.nav');
-sol.addEventListener('click', function () {
-  twosol.classList.toggle('active');
-  twosol2.classList.toggle('active2');
+var sol = document.querySelector(".solution");
+var twosol = document.querySelector(".solutions");
+var twosol2 = document.querySelector(".nav");
+sol.addEventListener("click", function () {
+  twosol.classList.toggle("active");
+  twosol2.classList.toggle("active2");
 });
 /**
  * 순서대로 나타나는 기능
  */
 // 나타날 요소들(.fade-in) 찾기.
 
-var fadeEls = document.querySelectorAll('.fade-in'); // 나타날 요소들을 하나씩 반복해서 처리!
+var fadeEls = document.querySelectorAll(".fade-in"); // 나타날 요소들을 하나씩 반복해서 처리!
 
 fadeEls.forEach(function (fadeEl, index) {
   // 각 요소들을 순서대로(delay) 보여지게 함!
   gsap.to(fadeEl, 1, {
-    delay: (index + 1) * .7,
+    delay: (index + 1) * 0.7,
     opacity: 1
   });
 });
@@ -155,40 +149,40 @@ fadeEls.forEach(function (fadeEl, index) {
  */
 // 관리할 요소들 검색!
 
-var spyEls = document.querySelectorAll('section.scroll-spy'); // 요소들 반복 처리!
+var spyEls = document.querySelectorAll("section.scroll-spy"); // 요소들 반복 처리!
 
 spyEls.forEach(function (spyEl) {
   new ScrollMagic.Scene({
     // 감시할 장면(Scene)을 추가
     triggerElement: spyEl,
     // 보여짐 여부를 감시할 요소를 지정
-    triggerHook: .8 // 화면의 80% 지점에서 보여짐 여부 감시
+    triggerHook: 0.8 // 화면의 80% 지점에서 보여짐 여부 감시
 
-  }).setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
+  }).setClassToggle(spyEl, "show") // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 });
-var spyElss = document.querySelectorAll('.content__item.scroll-spy'); // 요소들 반복 처리!
+var spyElss = document.querySelectorAll(".content__item.scroll-spy"); // 요소들 반복 처리!
 
 spyElss.forEach(function (spyEl) {
   new ScrollMagic.Scene({
     // 감시할 장면(Scene)을 추가
     triggerElement: spyEl,
     // 보여짐 여부를 감시할 요소를 지정
-    triggerHook: .99 // 화면의 90% 지점에서 보여짐 여부 감시
+    triggerHook: 0.99 // 화면의 90% 지점에서 보여짐 여부 감시
 
-  }).setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
+  }).setClassToggle(spyEl, "show") // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 });
-var spyElsss = document.querySelectorAll('.scroll-spy-box.scroll-spy'); // 요소들 반복 처리!
+var spyElsss = document.querySelectorAll(".scroll-spy-box.scroll-spy"); // 요소들 반복 처리!
 
 spyElsss.forEach(function (spyEl) {
   new ScrollMagic.Scene({
     // 감시할 장면(Scene)을 추가
     triggerElement: spyEl,
     // 보여짐 여부를 감시할 요소를 지정
-    triggerHook: .9 // 화면의 90% 지점에서 보여짐 여부 감시
+    triggerHook: 0.9 // 화면의 90% 지점에서 보여짐 여부 감시
 
-  }).setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
+  }).setClassToggle(spyEl, "show") // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 }); //Submit 알람
 
@@ -210,9 +204,9 @@ var wordEl = document.querySelector(".word");
 var word2El = document.querySelector(".word2");
 
 if (matchMedia("screen and (max-width: 426px)").matches) {
-  imgbgEl.classList.remove('fade-in');
-  wordEl.classList.remove('fade-in');
-  word2El.classList.remove('fade-in');
+  imgbgEl.classList.remove("fade-in");
+  wordEl.classList.remove("fade-in");
+  word2El.classList.remove("fade-in");
 }
 
 console.log(matchMedia("screen and (max-width: 426px)").matches);
@@ -220,23 +214,14 @@ console.log(matchMedia("screen and (max-width: 426px)").matches);
  * 올해가 몇 년도인지 계산
  */
 
-var thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear(); //  $().ready(function () {
-//   $("#alertStart").click(function () {
-//       Swal.fire({
-//           icon: 'success',                         // Alert 타입
-//           //title: 'Thank for your submit',         // Alert 제목
-//           text: 'Thank for your submit',  // Alert 내용
-//       });
-//   });
-// });
-
+var thisYear = document.querySelector(".this-year");
+thisYear.textContent = new Date().getFullYear();
 var alertStart = document.querySelector("#alertStart");
 
 alertStart.click = function () {
   Swal.fire({
-    text: 'Thank you for your submit',
-    icon: 'success'
+    text: "Thank you for your submit",
+    icon: "success"
   });
 };
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -267,7 +252,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56260" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56788" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
