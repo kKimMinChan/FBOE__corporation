@@ -233,9 +233,9 @@ thisYear.textContent = new Date().getFullYear(); //  $().ready(function () {
 
 var alertStart = document.querySelector("#alertStart");
 
-alertStart.onclick = function () {
+alertStart.click = function () {
   Swal.fire({
-    text: 'Thank for your submit',
+    text: 'Thank you for your submit',
     icon: 'success'
   });
 };
@@ -267,7 +267,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63098" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56260" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

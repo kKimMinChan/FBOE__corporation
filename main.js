@@ -118,9 +118,9 @@ console.log(matchMedia("screen and (max-width: 426px)").matches);
 // });
 
 const alertStart = document.querySelector("#alertStart");
-alertStart.onclick = function () {
+alertStart.click = function () {
   Swal.fire({
-    text: 'Thank for your submit',
+    text: 'Thank you for your submit',
     icon: 'success',
   })
 }
